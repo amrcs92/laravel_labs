@@ -1,0 +1,12 @@
+1)go create database
+
+2)then modify the .env file to point on the database and username and password that we use
+
+3)then go to database/migrations folder and open the two default tables and edit the email column give it length
+"$table->string('email',120)->index();"
+and set this in the second table file also
+
+4)run this command php artisan migrate (this will create 3 tables)
+
+5) run this command php artisan make:migration create_admins_table
+
